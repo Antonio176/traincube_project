@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<!-- <html ng-app="myApp"> -->
+<html>
+<head>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+ 
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<!-- <a><img style="height:200px" opacity="1.0" src="/images/moneyteam.png"class="img-responsive center-block" /> -->
+<script src="controllers/ebookcontroller.js"></script>
+ <script src="controllers/file_controller.js"></script>
+</a>
+  <title>Ebooks List</title>
+</head>
+<body ng-app="myApp">
+  <div class="text-center" ng-controller="AppCtrl">
+    <h1>Ebooks List</h1>
+
+  <table class="table">
+      <thead>
+        <tr>
+          <th>File Name</th> 
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="form-control" ng-model="ebookgridfs.filename"></td>
+          <td><button class="btn btn-primary" ng-click="addebookgridfs()">Add Videos</button></td>
+          <td><button class="btn btn-info" ng-click="update()">Update</button>&nbsp;&nbsp;<button class="btn btn-info" ng-click="deselect()">Clear</button></td>
+        </tr>
+        <tr ng-repeat="ebookgridfs in fs.files">
+          <td>{{ebookgridfs.filename}}</td>
+		<td><button class="btn btn-danger" ng-click="remove(ebookgridfs._id)">Remove</button></td>
+          <td><button class="btn btn-warning" ng-click="edit(ebookgridfs._id)">Edit</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+<script src="controllers/controller.js"></script>
+<!-- <script src="controllers/file_controller.js"></script>
+ --></body>
+</html>

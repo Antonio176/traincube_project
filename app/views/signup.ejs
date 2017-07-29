@@ -1,0 +1,112 @@
+<!--
+<!DOCTYPE html>
+    <html>
+        <head>
+            <%=title%>
+            <link rel="stylesheet" href="/css/style.css">
+        </head>
+        <body>
+                <% for (var i in messages){%>
+                    <div class="flash"><%= messages[i] %></div>{  
+                <%}%>
+               <div id="account-form-container">
+                <form action="/signup" method="post">
+                  <p id="sub1" class="subheading">Please tell us a little about yourself.</p>
+                 <hr>
+                    <div>
+                        <label>First Name:</label>
+                        <input type="text" name="firstName" placeholder="Enter a first name"/>
+                    </div>
+                    <div>
+                        <label>Last Name:</label>
+                        <input type="text" name="lastName" placeholder="Enter a last name"/>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input type="text" name="email" placeholder="Enter an email address"/>
+                    </div>
+                    <div>
+                        <label>Username:</label>
+                        <input type="text" name="username" placeholder="Enter a username"/>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div>
+                        <input type="submit" value="Sign Up"/>
+                    </div>
+                    
+                     <a href="/oauth/facebook">Sign in with Facebook</a>
+                     <a href="/oauth/google">Sign in with Google</a>
+                    
+                </form>
+              </div>
+          </body>
+    </html>
+    
+  --> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advocacy</title>
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  
+  <body><li><a href="http://www.beingspecialnyc.com/">Home</a></li></body>
+  
+  <!-- preset form values if we receive a userdata object //-->
+  <!-- store the userId on the client side in a hidden input field //-->
+  
+  <input type="hidden" id="userId">
+  <div id="account-form-container">
+    <form method="post" id="account-form" class="form-horizontal well span6">
+      <h1></h1>
+      <p id="sub1" class="subheading">Please tell us a little about yourself.</p>
+      <hr>
+      <fieldset>
+        <div id="name-cg" class="control-group">
+         <label>First Name:</label>
+                       
+          <div class="controls">
+             <input type="text" name="firstName" placeholder="Enter a first name"/>
+          </div>
+        </div>
+        <div id="email-cg" class="control-group">
+          <label>Last Name:</label>
+          <div class="controls">
+            <input type="text" name="lastName" placeholder="Enter a last name"/>
+          </div>
+        </div>
+        <div id="clist-cg" class="control-group">
+          <label>Email:</label>
+          <div class="controls">
+            <input type="text" name="email" placeholder="Enter an email address"/>
+          </div>
+        </div>
+        <hr>
+        <p id="sub2" class="subheading"></p>
+        <div id="user-cg" class="control-group">
+          <label>Username:</label>
+          <div class="controls">
+             <input type="text" name="username" placeholder="Enter a username"/>
+          </div>
+        </div>
+        <div id="pass-cg" class="control-group">
+          <label>Password:</label>
+          <div class="controls">
+            <input type="password" name="password" placeholder="Enter a password"/>
+          </div>
+        </div>
+        <hr>
+        
+        <div class="form-buttons">
+          
+          <button type="submit" id="account-form-btn2" class="btn">Sign Up</button>
+        </div>
+        
+        
+      </fieldset>
+    </form>
+    
+    

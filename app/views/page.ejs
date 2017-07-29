@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/main2.css">
+
+
+  </head>
+
+  <body>
+
+	<div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="http://www.beingspecialnyc.com/">Home</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+          <% if(userFullName) { %>
+            <h2>Welcome, <%=userFullName%></h2>
+            <li><a href="/signout">Sign Out</a></li>
+           <%} else{%>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/signin">Log in</a></li>
+        <%}%>
+		<li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Information and Adovcacy for NYC Public & Charter School Parents .</h1>
+        <p>"Your advocate of choice for you and your loved ones" </p>
+        <a href="http://www.beingspecialnyc.com/#!about/c24vq">Learn More</a>
+      </div>
+    </div>
+    <div class="neighborhood-guides">
+       <div class="container">
+            <h2>About Us:</h2>
+            <p>Introductory Videos</p>
+            <div class="row">
+               <div class="col-md-4">
+                    <div class="thumbnail">
+                       <video src="/video/video1.mp4" width="300" height="250" controls></video>
+
+                    </div>
+                    <div class="thumbnail">
+                       <!-- <video src="/video/video2.mp4" width="600" height="420" controls></video> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                     <div class="thumbnail">
+                          <video src="/video/video2.mp4" width="300" height="250" controls></video>
+                    </div>
+                    <div class="thumbnail">
+
+                    </div>
+                </div>
+                  <div class="col-md-4">
+                    <div class="thumbnail">
+				               <img src="https://s-media-cache-ak0.pinimg.com/236x/21/95/ac/2195acdeafb8d0ed727e14315bb4fc10.jpg">
+
+                    <div class="thumbnail">
+
+                    </div>
+
+                    </div>
+
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <div class="learn-more">
+	  <div class="container">
+		<div class="row">
+	      <div class="col-md-4">
+			<h3>Contact Us</h3>
+			<h3>Hazel Adams-Shango</h3>
+      <h3>Independent Parent Advocate</h3>
+			<p><a href="#">info@beingspecialnyc.com</a></p>
+      <p>Tel: 347-427-0828</p>
+	      </div>
+		  <div class="col-md-4">
+			<h3>Address</h3>
+			<h3>2501 Grand Concourse,</h3>
+      <h3>3rd Floor/BBB</h3>
+      <h3>Bronx, NY 10468</h3>
+
+		  </div>
+		  <div class="col-md-4">
+			<h3>Why consulting with us:</h3>
+			<p>We're Affordable; Confidential; and customized </p>
+      <p>20+ years advocacy and parenting experience</p>
+      <p>We meet NYC parents from where ever they are!!</p>
+
+		  </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <li><a href="http://www.beingspecialnyc.com/">Home</a></li>
+          <li><a href="#">Browse</a></li>
+        </ul>
+        <ul class="pull-right">
+
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/signin">Log in</a></li>
+
+		<li><a href="#">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

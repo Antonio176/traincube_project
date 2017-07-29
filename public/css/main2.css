@@ -1,0 +1,65 @@
+.nav a {
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+  border-radius: 15px 50px;
+  background: #191919;
+  padding: 8px; 
+  width: 200px;
+  height: 150px; 
+  
+   
+}
+
+.jumbotron {
+  background-image:url(http://www.skorthodontics.com/images/family-home.png);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+}
+
+.jumbotron h1 {
+  color: #ffffff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+
+/*
+img {
+  margin-left: 50%;
+   margin-top: 65%;
+   width: 100%;
+}
+*/

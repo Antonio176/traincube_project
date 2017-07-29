@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title><%= title %></title>
+        </head>
+            <link rel="stylesheet" href="/vendor/bootstrap.min.css">
+            <link rel="stylesheet" href="/css/style.css">
+        <body>
+            <% for (var i in messages) {%>
+            <div class="flash"><%= messages[i] %></div>
+             <% } %>
+             <div id="login-container">
+                <form method="post" id="login-form" class="well span4">
+                <h1>BEING SPECIAL NYC</h1>
+                 <p class="subheading">Please Login To Your Account</p>
+                 <label>Username: </label>
+                <input type="text" name="username" />
+                <label>Password:</label>
+                 <input type="password" name="password" />
+                 <button type="submit" id="btn-login" class="btn btn-primary"><i class="icon-lock icon-white"></i>Sign in</button>
+                </form>
+            </div>
+            
+        </body>
+    </html>
+ <!--   
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title><%= title %></title>
+        </head>
+            <link rel="stylesheet" href="/css/style.css">
+        <body>
+            <% for (var i in messages) {%>
+            <div class="flash"><%= messages[i] %></div>
+             <% } %>
+            <form action="/signin" method="post">
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" />
+                </div>
+                <div>
+                    <input type="submit" value="Sign in" />
+                </div>
+            </form>
+             <!--  
+            <a href="/oauth/facebook">Sign in with Facebook</a>
+            <a href="/oauth/google">Sign in with Google</a>
+            
+        </body>
+    </html>
+--> 
